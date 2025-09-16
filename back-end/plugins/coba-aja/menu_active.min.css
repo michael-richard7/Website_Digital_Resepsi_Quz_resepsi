@@ -1,0 +1,7 @@
+ul li a .nav-link {
+  color: burlywood;
+}
+ul li a .nav-link:active{
+  background: rgb(12, 184, 58);
+  color: black;
+}

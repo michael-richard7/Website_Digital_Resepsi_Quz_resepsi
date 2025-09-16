@@ -1,0 +1,18 @@
+label {
+  display: block;
+}
+/* Menyembunyikan radio button */
+label > input {
+  visibility: hidden;
+  position: absolute;
+}
+/* style gambar */
+label > input + img {
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+/* memberikan style pada gambar yang dipilih */
+label > input:checked + img {
+  border: 2px solid #ff00cb;
+  box-shadow: aqua;
+}

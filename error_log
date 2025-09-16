@@ -1,0 +1,1 @@
+[01-Jun-2023 10:21:24 UTC] PHP Fatal error:  Cannot declare class M_info_mempelai, because the name is already in use in /home/quzresep/public_html/quzresepsi/application/views/Info_mempelai/view.php on line 2
