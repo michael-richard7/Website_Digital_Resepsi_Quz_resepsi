@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: "Aref Ruqaa", serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: #f8f8f8;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.navbar nav a:hover {
+  color: #d97706;
+}
+.logo {
+  width: 60px;
+}
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #d97706;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Hero */
+.banner {
+    min-height: 100vh;
+    background: #2f3b52; /* warna background kiri */
+    overflow: hidden;
+  }
+
+  .banner .row {
+    min-height: 100vh;
+  }
+
+  .banner-img {
+    background: url('images/home page.jpg') center/cover no-repeat;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .banner h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+
+  .banner a.btn {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .banner {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .banner-img {
+      display: none; /* sembunyikan gambar di mobile */
+    }
+  }
+/* About Us */
+.about-title {
+  font-family: "Great Vibes", cursive; /* font script elegan */
+  font-size: 2rem;
+  color: #000;
+  text-align: left;
+}
+
+.about-text {
+  font-family: "Georgia", serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    text-align: center;
+  }
+  .about-text {
+    text-align: center;
+  }
+}
+
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Irish Grover", cursive;
+}
+
+/* Services */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 2rem;
+}
+.card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+/* Achievement */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.stat {
+  text-align: center;
+}
+.stat img {
+  width: 80px;
+}
+.stat h3 {
+  font-size: 2rem;
+  color: #d97706;
+}
+
+/* Contact */
+.contact-info p {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-info img {
+  width: 20px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f8f8f8;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+.animate-fade, .animate-up, .animate-zoom {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.animate-zoom {
+  transform: scale(0.9);
+}
+.show {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
