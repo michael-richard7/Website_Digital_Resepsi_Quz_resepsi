@@ -30,7 +30,6 @@
 <!-- Gambar Cover -->
 <style media="screen">
   .upload1{
-    width: ;
     position: relative;
     margin: auto;
     text-align: center;
@@ -886,7 +885,7 @@
                             <!-- Page 6 'Template' -->
                             <fieldset>
                             <div class="form-card">
-                              <div class="card-body" style="margin-left=auto;margin-right=auto;">
+                              <div class="card-body" style="margin-left:auto;margin-right:auto;">
                                 <div class="radio-buttons" method="POST">
                                   <?php foreach($template as $t):?>
                                     <?php foreach($undangan as $u):?>
@@ -895,13 +894,15 @@
                                       <?php else:?>
                                         <label class="custom-radio">
                                       <?php endif; ?>
+                                      
                                       <input type="radio" name="template_id" value="<?= $t['id_template']?>" <?php if($u['id_template'] == $t['id_template']):?>checked<?php endif; ?> />
                                       
                                       <span class="radio-btn">
                                         <i class="las la-check"></i>
                                         <div class="hobbies-icon">
                                           <img src="<?= base_url('front-end/images/template_undangan/'). $t['gambar'] ?>">
-                                        
+                                          <!--<a href ="../application/controllers/Home.php?id_template=<?= $t['nama_template']?>" target="_blank" class="pilih_button btn btn-outline-info" value="">View</button></a>
+                                          -->
                                           <a href="javascript:void(0);" onclick="window.open('<?php echo base_url();?><?= $t['nama_template']?>?s=<?php echo $session_value;?>', '_blank');" class="pilih_button btn btn-outline-info">Lihat</a>
                                         </div>
                                       </span>

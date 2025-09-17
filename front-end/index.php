@@ -1190,7 +1190,6 @@
 
     <!-- Plugins for this template -->
     <script src="js/jquery-plugin-collection.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1cZtqidvg0m-f8Hd3S6RHx1mY-omuLS4"></script>
 
     <!-- Custom script for this template -->
     <script src="js/script.js"></script>
